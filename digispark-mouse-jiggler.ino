@@ -21,9 +21,9 @@ void setup() {
 int x_move = 10;
 int y_move = 10;
 void loop() {
-//Moves mouse 1 pixel in a direction (up/down/left/right) in a square
+  //Moves mouse 1 pixel in a direction (up/down/left/right) in a square
 
-  
+
   digitalWrite(1, HIGH);
   DigiMouse.moveY(y_move);
   DigiMouse.delay(50);
@@ -44,7 +44,7 @@ void loop() {
 
   digitalWrite(1, HIGH);
   DigiMouse.moveX(-x_move);
-   DigiMouse.delay(50);
+  DigiMouse.delay(50);
   digitalWrite(1, LOW);
   DigiMouse.delay(random(LowerCycleTime, UpperCycleTime));
 
